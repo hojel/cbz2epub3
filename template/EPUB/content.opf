@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf" prefix="rendition: http://www.idpf.org/vocab/rendition/#" unique-identifier="c4e3id" xml:lang="ko" id="package">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<!-- unique identifier -->
+		<dc:identifier id="c4e3id">@@@ID@@@</dc:identifier>
+<!-- language of the book -->
+		<dc:language>ko</dc:language>
+<!-- title -->
+		<dc:title id="title">@@@TITLE@@@</dc:title>
+<!-- creator -->
+		<dc:creator id="creator1">Unknown</dc:creator>
+		<meta refines="#creator1" property="role" scheme="marc:relators">aut</meta>
+<!-- publisher -->
+		<dc:publisher>Unknown</dc:publisher>
+<!-- date -->
+		<dc:date>2013</dc:date>
+<!-- contributor -->
+		<dc:contributor id="contributor">manga2epub3</dc:contributor>
+		<meta refines="#contributor" property="role" scheme="marc:relators">mrk</meta>
+		<meta property="dcterms:modified">2013-07-07T12:00:00Z</meta>
+<!-- meta for the cover -->
+		<meta name="cover" content="@@@COVERID@@@"/>
+<!-- meta for fixed layout -->
+		<meta property="rendition:layout">pre-paginated</meta>
+		<meta property="rendition:spread">auto</meta>
+		<meta property="rendition:orientation">auto</meta>
+	</metadata>
+	<manifest>
+<!-- navigation -->
+		<item id="nav" href="Navigation/nav.xhtml" properties="nav" media-type="application/xhtml+xml"/>
+<!-- style -->
+		<item id="css" href="Style/style.css" media-type="text/css"/>
+<!-- content -->
+		@@@FILELIST@@@
+	</manifest>
+	<spine page-progression-direction="@@@DIRECTION@@@">
+		@@@ITEMREFLIST@@@
+	</spine>
+</package>
